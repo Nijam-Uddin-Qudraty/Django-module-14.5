@@ -1,0 +1,16 @@
+{% extends "base.html" %} {% block body %}
+
+<form
+class="w-50 m-auto"
+action=""
+method="post"
+,class="w-50 m-auto"
+enctype="multipart/form-data"
+>
+{% csrf_token %} 
+<h1>model</h1>
+{{form.as_ul}}
+<button class="btn btn-danger" type="submit">Submit</button>
+</form>
+
+{% endblock body %}
